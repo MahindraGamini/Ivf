@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+/* Common text styles */
+.text-primary {
+  color: #374151;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-secondary {
+  color: #4B5563;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-heading {
+  color: #1F2937;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+/* Flexbox utilities */
+.flex-center {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #F59E0B;
   color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-primary:hover {
+  background-color: #F59E0B;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Input styles */
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.radio-input {
+  border: 2px solid #F59E0B;
+  accent-color: #F59E0B;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkbox-input {
+  accent-color: #F59E0B;
+}
+
+/* Slider Styles */
+.slider-container {
+  width: 50%;
+}
+
+.slider {
+  color: #F59E0B;
 }
