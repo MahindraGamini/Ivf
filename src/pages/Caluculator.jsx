@@ -40,15 +40,24 @@ const IVFCalculator = () => {
 
   return (
     <div className="p-8 min-h-screen flex flex-col justify-center items-center bg-[#FCFAF5] font-poppins">
-      {/* Breadcrumb */}
-      <div className="text-sm mb-6 text-gray-600 self-start">
+  <div>
+    
+      <div className="text-sm mb-6 text-gray-600 self-start hidden sm:block">
         <a href="/" className="text-gray-700 font-normal">
           Home
         </a>{" "}
         / <span className="font-bold text-gray-900">IVF Success Rate Calculator</span>
       </div>
 
-      {/* Age Range */}
+      <div className="text-sm mb-6 text-gray-600 self-start  lg:hidden">
+        <div className="text-white font-medium text-base">
+          <button  className="text-[#1E231E]">
+            ← IVF Success Rate Calculator
+          </button>
+        </div>
+      </div>
+    </div>
+
       <div className="text-center mb-12">
         <h2 className="text-2xl mb-4 font-medium text-gray-900">
           Which age range applies to you?
@@ -92,7 +101,6 @@ const IVFCalculator = () => {
         </div>
       </div>
 
-      {/* Number of IVF Cycles */}
       <div className="text-center mb-12 w-full md:w-1/5">
         <h2 className="text-2xl font-semibold mb-4 text-gray-900">
           Number of IVF Cycles?
@@ -112,13 +120,11 @@ const IVFCalculator = () => {
         />
       </div>
 
-      {/* Procedures */}
-      <div className="text-center mb-12">
+      <div className="text-center mb-12 w-full md:w-1/5">
         <h2 className="text-2xl font-semibold mb-4 text-gray-900">
           Have you undergone these procedures before?
         </h2>
         <div className="flex flex-col sm:flex-row justify-around items-center w-full max-w-3xl">
-          {/* ICSI Procedure */}
           <div className="flex items-center space-x-4 mb-6 sm:mb-0">
             <span className="font-medium text-gray-700">ICSI Procedure:</span>
             {["Yes", "No"].map((option) => (
@@ -153,7 +159,7 @@ const IVFCalculator = () => {
             ))}
           </div>
 
-          {/* PGT Testing */}
+         
           <div className="flex items-center space-x-4 mb-6 sm:mb-0">
             <span className="font-medium text-gray-700">PGT Testing:</span>
             {["Yes", "No"].map((option) => (
@@ -190,7 +196,6 @@ const IVFCalculator = () => {
         </div>
       </div>
 
-      {/* Medical Conditions */}
       <div className="text-center mb-12">
         <h2 className="text-2xl font-semibold mb-4 text-gray-900">
           Do you have any of these medical conditions?

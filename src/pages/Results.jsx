@@ -11,7 +11,7 @@ const Results = () => {
       className="bg-gray-900 min-h-screen text-white"
       style={{ fontFamily: "Poppins" }}
     >
-      {/* Breadcrumb */}
+  
       <div className="w-full px-4 py-3 text-xs sm:text-sm text-gray-400">
         <nav className="hidden sm:block">
           <span className="cursor-pointer hover:text-orange-500 font-medium">
@@ -29,9 +29,9 @@ const Results = () => {
         </div>
       </div>
 
-      {/* Main Content */}
+      
       <div className="flex flex-col lg:flex-row items-center">
-        {/* Left Section */}
+        
         <div
           className="flex flex-col items-center lg:items-start w-full lg:w-1/2 px-4 sm:px-6 left-0"
         >
@@ -66,7 +66,6 @@ const Results = () => {
           </div>
         </div>
 
-        {/* Right Section */}
         <div className="relative w-full lg:w-1/2 h-64 sm:h-96 lg:h-[720px] order-last lg:order-none">
           <img
             src="https://s3-alpha-sig.figma.com/img/3083/cfdf/a3342bdeb14d22fce3f84a7131648fe0?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=m3rcPSzyYXFQ3av1UzjVwX~ywz9ut1Jmpzmx6Z~RWwUd~~r9UxNnyNl4R9JldCD4zDCW7Q2IeQvOvnDs6u4pyH3CTfoUnO5v492UL1iuyJt3I3zHG387QUApgjGytHwEVS51em2fW5HQXigaiOLgI6ldEf-XgFWD-AZPB6squ7fJ1sPU5SEgs04SJJgSlkJzl1Ka-Ed1OsDBqFXjBxAf7zZ~60XEh1fn~sDWw58OaB~z-10gRcakHkeVapNSDVELmye3t0JjF7zlsu5d9JV7LvBxi6ry6D-l1bYi0r8uWHVFccwd~tuvdXccvuZZNeoqnR6oiSRnQkxLHAzIzIkmVQ__"
@@ -76,7 +75,7 @@ const Results = () => {
         </div>
       </div>
 
-      {/* Sticky Button Below the Image */}
+      
       <div className="sticky top-0 bg-gray-900 w-full px-4 py-4 z-20 sm:hidden">
         <button className="w-full bg-red-500 text-white py-3 rounded-md font-medium text-sm">
           Start Private Conversation
